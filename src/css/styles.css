@@ -1,0 +1,162 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: 0.9em Verdana, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+
+li {
+  padding: 0.2em 0;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a,
+a:focus {
+  color: #004d00;
+}
+
+a:hover {
+  color: #008000;
+  text-decoration: none;
+}
+
+.error {
+  color: #990000;
+  font-weight: bold;
+  margin: 0.5em 1.5em;
+}
+
+/* Prevent elements hidden by Knockout from flashing on page load */
+/* You also need to do a data-bind to the element- css: { hidden: false } */
+.hidden {
+  display: none;
+}
+
+/* Map */
+#map {
+  height: 100%;
+}
+
+.mapError {
+  font-size: 2em;
+  position: absolute;
+  left: 320px;
+  top: 3em;
+}
+
+/* Sidebar */
+.sidebar {
+  position: absolute;
+  background: url(../img/bg.png);
+  left: 1em;
+  top: 1em;
+  z-index: 5;
+  width: 310px;
+  height: 95%;
+  overflow: auto;
+}
+
+.app-title {
+  text-align: center;
+  font: 2.2em 'Vidaloka', serif;
+  color: #060;
+  margin: 0.2em 0;
+}
+
+.zip {
+  margin: 0.5em 1em 0;
+}
+
+.new-zip {
+  text-align: center;
+}
+
+.attribution {
+  font-size: 0.85em;
+  margin: 0.5em 1.4em;
+}
+
+.market-query {
+  margin: 1em;
+}
+
+.market-list {
+  margin: 0.25em 0 0 0 ;
+}
+
+.results {
+  margin: 0.3em 1em 0 1em;
+}
+
+.results-title {
+  font: 1.5em 'Vidaloka', serif;;
+  color: #060;
+  margin: 0 0 0.25em 0;
+}
+
+.hide-btn,
+.show-btn {
+    margin: 0.5em 0 0 0.4em;
+}
+
+.hide-btn {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+/* Show button goes to bottom when sidebar minimized */
+/* because it blocks InfoWindow content if at the top */
+.show-btn {
+  position: absolute;
+  left: 1em;
+  bottom: 2em;
+}
+
+/* InfoWindow */
+.infowin-title {
+  font: 1.3em 'Vidaloka', serif;
+}
+
+.gm-style-iw
+{
+  max-width: 350px;
+}
+
+.disclaimer {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 768px) {
+
+  .mapError {
+    font-size: 1.1em;
+    left: 203px;
+    top: 2em;
+}
+
+  .app-title {
+    font-size: 1.4em
+  }
+
+  .sidebar {
+    left: 0.4em;
+    top: 0.4em;
+    width: 200px;
+  }
+
+  li {
+    margin: 0.4em 0;
+  }
+
+  .results-title {
+    font: 1em;
+  }
+}
